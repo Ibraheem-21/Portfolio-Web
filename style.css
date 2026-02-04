@@ -1,5 +1,5 @@
 /* General */
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;600;700&family=Work+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Work+Sans:wght@400;500;600&display=swap');
 
 :root {
     --bg: #f7f2e9;
@@ -12,7 +12,7 @@
     --border: rgba(27, 27, 31, 0.14);
     --shadow: 0 12px 30px rgba(27, 27, 31, 0.12);
     --font-body: 'Work Sans', sans-serif;
-    --font-heading: 'Bodoni Moda', serif;
+    --font-heading: 'Lato', sans-serif;
 }
 
 * {

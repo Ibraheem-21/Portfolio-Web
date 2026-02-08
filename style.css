@@ -271,6 +271,10 @@ section {
     gap: 0.6rem;
 }
 
+.hero-btn-container {
+    justify-content: center;
+}
+
 .btn {
     font-weight: 600;
     transition: all 250ms ease;

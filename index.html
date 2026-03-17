@@ -1,336 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>My Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="mediaqueries.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ibraheem Hussain | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Ibraheem Hussain, a University of Toronto CS student building data-driven tools, modern web experiences, and practical ML projects."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Ibraheem Hussain</div>
-      <div>
+    <div class="site-shell">
+      <nav id="desktop-nav">
+        <div class="logo">Ibraheem Hussain</div>
+        <div>
           <ul class="nav-links">
-            <li><a href="#about">About</a></li> 
-            <li><a href="#experience">Experience</a></li> 
-            <li><a href="#projects">Projects</a></li> 
-          </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Ibraheem Hussain</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li> 
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> 
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> 
-        </div>     
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/prof-pic1.png" alt="Ibraheem Hussain profile picture">
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hi, I'm</p>
-        <h1 class="title">Ibraheem Hussain</h1>
-        <p class="section__text__p2">CS Student at UofT</p>
-        <div class="btn-container hero-btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/Ibraheem Hussain Resume.pdf')"
-          >
-            Download Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='mailto:ibraheem.mustafa.hussain@gmail.com'"
-          >
-            Email Me
-          </button>
-        </div>
-        <div id="social-container">
-          <img 
-            src="./assets/linkedin.png" 
-            alt="My LinkedIn profile"
-            class="icon" 
-            onclick="location.href='https://linkedin.com/in/ibraheem-hussain-9b80ba253'"
-          />
-          <img 
-            src="./assets/github.png" 
-            alt="My Github profile"
-            class="icon" 
-            onclick="location.href='https://github.com/Ibraheem-21'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img 
-                src="./assets/experience.png" 
-                alt="experience icon"
-                class="icon"
-              />
-              <h3>Work Experience</h3>
-              <p>Front-End Engineer @ UofT AI Group<br />Software Developer @ UofT Web Development Club<br />Arrive Ready CS Intern @ UofT Faculty of Arts & Science</p>
-            </div>
-            <div class="details-container">
-              <img 
-                src="./assets/education.png" 
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>BHSc in CS, UofT <br />Expected graduation: 2028</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>I'm a BHSc Computer Science student at the University of Toronto who enjoys building data-driven tools and clean, user-friendly interfaces. I'm especially interested in machine learning, applied analytics, and turning rough ideas into polished products.</p>
-          </div>
-        </div>
-      </div>
-      <img 
-        src="./assets/arrow.png" 
-        alt="Arrow icon" 
-        class="icon arrow" 
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Programming Languages</h2>
-            <div class="article-container">
-              <article>
-                <img 
-                  src="./assets/checkmark.png" 
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img 
-                  src="./assets/checkmark.png" 
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img 
-                  src="./assets/checkmark.png" 
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img 
-                  src="./assets/checkmark.png" 
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img 
-                  src="./assets/checkmark.png" 
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Certifications</h2>
-            <div class="article-container">
-              <article>
-                <img 
-                  src="./assets/checkmark.png" 
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Data Science Foundations - Level 1</h3>
-                  <p>IBM</p>
-                </div>
-              </article>
-              <article>
-                <img 
-                  src="./assets/checkmark.png" 
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Data Analysis using Python</h3>
-                  <p>IBM</p>
-                </div>
-              </article>
-              <article>
-                <img 
-                  src="./assets/checkmark.png" 
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Introduction to Cybersecurity</h3>
-                  <p>Cisco</p>
-                </div>
-              </article>
-              <article>
-                <img 
-                  src="./assets/checkmark.png" 
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Complete Python Mastery</h3>
-                  <p>Code with Mosh </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img 
-        src="./assets/arrow.png" 
-        alt="Arrow icon" 
-        class="icon arrow" 
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container project-card">
-            <h2 class="experience-sub-title project-title">Movie Recommendation System</h2>
-            <div class="btn-container">
-              <button 
-                class="btn btn-color-2 project-btn" 
-                onclick ="location.href='https://github.com/Ibraheem-21/Movie-Recommendation-System'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container project-card">
-            <h2 class="experience-sub-title project-title">Weather Prediction Model</h2>
-            <div class="btn-container">
-              <button 
-                class="btn btn-color-2 project-btn" 
-                onclick ="location.href='https://github.com/Ibraheem-21/Oakland_CA_Weather_Prediction_Model'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container project-card">
-            <h2 class="experience-sub-title project-title">Interactive Expense Tracker</h2>
-            <div class="btn-container">
-              <button 
-                class="btn btn-color-2 project-btn" 
-                onclick ="location.href='https://github.com/Ibraheem-21/Interactive-Expense-Tracker'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="projects-toggle">
-          <button 
-            class="btn btn-color-2 project-btn"
-            id="toggle-projects-btn"
-            onclick="toggleProjects()"
-            aria-expanded="false"
-          >
-            See more
-          </button>
-        </div>
-        <div id="more-projects" class="about-containers projects-panel hidden">
-          <div class="details-container color-container project-card">
-            <h2 class="experience-sub-title project-title">Instant Recipe Finder</h2>
-            <div class="btn-container">
-              <button 
-                class="btn btn-color-2 project-btn" 
-                onclick ="location.href='https://github.com/Ibraheem-21/Instant-Recipe-Finder'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container project-card">
-            <h2 class="experience-sub-title project-title">Personal Notepad</h2>
-            <div class="btn-container">
-              <button 
-                class="btn btn-color-2 project-btn" 
-                onclick ="location.href='https://github.com/Ibraheem-21/Personal-Notepad'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container project-card">
-            <h2 class="experience-sub-title project-title">QR Code Generator</h2>
-            <div class="btn-container">
-              <button 
-                class="btn btn-color-2 project-btn" 
-                onclick ="location.href='https://github.com/Ibraheem-21/QR-Code-Generator'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img 
-        src="./assets/arrow.png" 
-        alt="Arrow icon" 
-        class="icon arrow" 
-        onclick="location.href='./#profile'"
-      />
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li> 
-            <li><a href="#experience">Experience</a></li> 
-            <li><a href="#projects">Projects</a></li> 
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2026 Ibraheem Hussain. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>  
+
+      <nav id="hamburger-nav">
+        <div class="logo">Ibraheem Hussain</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main>
+        <section id="profile">
+          <div class="hero-copy">
+            <p class="section__text__p1">Computer Science Student</p>
+            <h1 class="title">Building useful software with clean interfaces and real-world data.</h1>
+            <p class="hero-lead">
+              I'm Ibraheem Hussain, a University of Toronto student focused on web development,
+              AI analytics, and machine learning projects that feel polished from both the code and
+              user side.
+            </p>
+
+            <div class="hero-meta">
+              <span class="pill">Toronto / UofT</span>
+              <span class="pill pill-accent">ibraheemhussain.app</span>
+            </div>
+
+            <div class="btn-container hero-btn-container">
+              <button
+                class="btn btn-color-1"
+                onclick="window.open('./assets/Ibraheem Hussain Resume.pdf')"
+              >
+                Download Resume
+              </button>
+              <button
+                class="btn btn-color-2"
+                onclick="location.href='#projects'"
+              >
+                View Projects
+              </button>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-card">
+                <strong>8+</strong>
+                <span>Core technical skills</span>
+              </div>
+              <div class="stat-card">
+                <strong>6</strong>
+                <span>Featured projects</span>
+              </div>
+              <div class="stat-card">
+                <strong>2028</strong>
+                <span>Expected graduation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="section__pic-container">
+              <img src="./assets/prof-pic1.png" alt="Ibraheem Hussain profile picture" />
+            </div>
+
+            <div class="hero-panel">
+              <p class="hero-panel-label">Currently focused on</p>
+              <ul class="hero-focus-list">
+                <li>Frontend engineering</li>
+                <li>Data-driven applications</li>
+                <li>Applied machine learning</li>
+              </ul>
+              <div id="social-container">
+                <img
+                  src="./assets/linkedin.png"
+                  alt="LinkedIn profile"
+                  class="icon"
+                  onclick="location.href='https://linkedin.com/in/ibraheem-hussain-9b80ba253'"
+                />
+                <img
+                  src="./assets/github.png"
+                  alt="GitHub profile"
+                  class="icon"
+                  onclick="location.href='https://github.com/Ibraheem-21'"
+                />
+                <img
+                  src="./assets/email.png"
+                  alt="Email Ibraheem Hussain"
+                  class="icon"
+                  onclick="location.href='mailto:ibraheem.mustafa.hussain@gmail.com'"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about">
+          <p class="section__text__p1">About</p>
+          <h2 class="title">A practical builder with an eye for product quality.</h2>
+          <div class="section-container about-grid">
+            <div class="details-container about-intro-card">
+              <p>
+                I enjoy taking an idea from rough concept to something people can actually use.
+                That usually means writing the logic, shaping the interface, and making sure the
+                final experience feels clear instead of overcomplicated.
+              </p>
+              <p>
+                My work sits at the intersection of software engineering, analytics, and product
+                thinking. I'm especially interested in AI, machine learning, and projects where
+                data supports decisions while the UI makes those decisions easy to understand.
+              </p>
+            </div>
+
+            <div class="about-containers">
+              <div class="details-container about-summary-card">
+                <div class="about-summary-section">
+                  <h3>Experience</h3>
+                  <ul class="experience-list">
+                    <li>
+                      <span class="experience-role">Front-End Engineer</span>
+                      <span class="experience-company">UofT AI Group</span>
+                    </li>
+                    <li>
+                      <span class="experience-role">Software Developer</span>
+                      <span class="experience-company">UofT Web Development Club</span>
+                    </li>
+                    <li>
+                      <span class="experience-role">Arrive Ready CS Intern</span>
+                      <span class="experience-company">UofT Faculty of Arts &amp; Science</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="details-container about-summary-card">
+                <div class="about-summary-section education-section">
+                  <h3>Education</h3>
+                  <div class="education-block">
+                    <p class="education-degree">BHSc in Computer Science</p>
+                    <p class="education-school">University of Toronto</p>
+                    <p class="education-meta">Expected graduation: 2028</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience">
+          <p class="section__text__p1">Capabilities</p>
+          <h2 class="title">Skills and certifications</h2>
+          <div class="experience-layout">
+            <div class="details-container skills-overview">
+              <h3 class="experience-sub-title">Programming languages</h3>
+              <div class="skills-chip-grid">
+                <span class="skill-chip">Python</span>
+                <span class="skill-chip">Java</span>
+                <span class="skill-chip">HTML</span>
+                <span class="skill-chip">CSS</span>
+                <span class="skill-chip">JavaScript</span>
+                <span class="skill-chip">R</span>
+                <span class="skill-chip">SQL</span>
+              </div>
+              <p class="skills-caption">
+                Comfortable moving between application logic, frontend implementation, and data
+                analysis workflows.
+              </p>
+            </div>
+
+            <div class="about-containers">
+              <div class="details-container">
+                <h3 class="experience-sub-title">Technical toolkit</h3>
+                <div class="article-container">
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                    <div>
+                      <h4>Frontend Development</h4>
+                      <p>Responsive UI, interaction design, component structure</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                    <div>
+                      <h4>Data Analysis</h4>
+                      <p>Python workflows, exploratory analysis, data-backed insights</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                    <div>
+                      <h4>Machine Learning</h4>
+                      <p>Model experimentation and practical predictive projects</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="details-container">
+                <h3 class="experience-sub-title">Certifications</h3>
+                <div class="article-container">
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Certification icon" class="icon" />
+                    <div>
+                      <h4>Data Science Foundations - Level 1</h4>
+                      <p>IBM</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Certification icon" class="icon" />
+                    <div>
+                      <h4>Data Analysis using Python</h4>
+                      <p>IBM</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Certification icon" class="icon" />
+                    <div>
+                      <h4>Introduction to Cybersecurity</h4>
+                      <p>Cisco</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Certification icon" class="icon" />
+                    <div>
+                      <h4>Complete Python Mastery</h4>
+                      <p>Code with Mosh</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects">
+          <p class="section__text__p1">Selected Work</p>
+          <h2 class="title">Projects built around useful outcomes</h2>
+          <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container project-card">
+                <div class="project-icon" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <h3 class="experience-sub-title project-title">Movie Recommendation System</h3>
+                <p>
+                  A recommendation workflow designed to suggest relevant films based on user
+                  preference patterns.
+                </p>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/Ibraheem-21/Movie-Recommendation-System'"
+                  >
+                    GitHub
+                  </button>
+                </div>
+              </div>
+
+              <div class="details-container color-container project-card">
+                <div class="project-icon" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <h3 class="experience-sub-title project-title">Weather Prediction Model</h3>
+                <p>
+                  A predictive model exploring weather trends and translating them into a practical
+                  forecasting tool.
+                </p>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/Ibraheem-21/Oakland_CA_Weather_Prediction_Model'"
+                  >
+                    GitHub
+                  </button>
+                </div>
+              </div>
+
+              <div class="details-container color-container project-card">
+                <div class="project-icon" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <h3 class="experience-sub-title project-title">Interactive Expense Tracker</h3>
+                <p>
+                  A budgeting interface built to make daily expense tracking fast, readable, and
+                  useful.
+                </p>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/Ibraheem-21/Interactive-Expense-Tracker'"
+                  >
+                    GitHub
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="projects-toggle">
+              <button
+                class="btn btn-color-2 project-btn"
+                id="toggle-projects-btn"
+                onclick="toggleProjects()"
+                aria-expanded="false"
+              >
+                See more
+              </button>
+            </div>
+
+            <div id="more-projects" class="about-containers projects-panel hidden">
+              <div class="details-container color-container project-card">
+                <div class="project-icon" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <h3 class="experience-sub-title project-title">Instant Recipe Finder</h3>
+                <p>
+                  A quick-search recipe tool focused on speed, simplicity, and useful filtering.
+                </p>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/Ibraheem-21/Instant-Recipe-Finder'"
+                  >
+                    GitHub
+                  </button>
+                </div>
+              </div>
+
+              <div class="details-container color-container project-card">
+                <div class="project-icon" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <h3 class="experience-sub-title project-title">Personal Notepad</h3>
+                <p>
+                  A lightweight notepad app aimed at frictionless note capture and organization.
+                </p>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/Ibraheem-21/Personal-Notepad'"
+                  >
+                    GitHub
+                  </button>
+                </div>
+              </div>
+
+              <div class="details-container color-container project-card">
+                <div class="project-icon" aria-hidden="true">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <h3 class="experience-sub-title project-title">QR Code Generator</h3>
+                <p>
+                  A clean utility for turning links and text into QR codes with minimal steps.
+                </p>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://github.com/Ibraheem-21/QR-Code-Generator'"
+                  >
+                    GitHub
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact">
+          <p class="section__text__p1">Contact</p>
+          <h2 class="title">Open to internships, collaborations, and interesting builds.</h2>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+              <p><a href="mailto:ibraheem.mustafa.hussain@gmail.com">ibraheem.mustafa.hussain@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+              <p><a href="https://linkedin.com/in/ibraheem-hussain-9b80ba253">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" />
+              <p><a href="https://github.com/Ibraheem-21">GitHub</a></p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2026 Ibraheem Hussain. All Rights Reserved.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

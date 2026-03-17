@@ -55,8 +55,7 @@
   }
 
   .contact-info-upper-container {
-      flex-direction: column;
-      align-items: stretch;
+      grid-template-columns: 1fr;
   }
 
   .contact-info-container {

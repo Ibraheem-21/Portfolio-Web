@@ -542,10 +542,17 @@ section {
 
 #about .title,
 #experience .title,
-#projects .title,
-#contact .title {
+#projects .title {
     font-size: clamp(2rem, 3.1vw, 3.1rem);
     max-width: 16ch;
+}
+
+#contact .title {
+    font-size: clamp(2rem, 3.1vw, 3.1rem);
+    max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-wrap: balance;
 }
 
 #experience .about-containers {
@@ -677,9 +684,9 @@ article h4 {
 }
 
 .contact-info-upper-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: minmax(0, 2.1fr) repeat(2, minmax(0, 1fr));
+    align-items: stretch;
     gap: 0.8rem;
     padding: 1rem;
     margin-top: 1.5rem;
@@ -689,10 +696,22 @@ article h4 {
 .contact-info-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.6rem;
     padding: 0.85rem 1rem;
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.76);
+    min-width: 0;
+}
+
+.contact-info-container p {
+    min-width: 0;
+}
+
+.contact-info-container a {
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
 }
 
 .contact-icon {
